@@ -20,7 +20,7 @@
 	class IndexController extends Zend_Controller_Action
 	{
 	    /**
-		 * Index Action
+	     * Index Action
 		 *
 		 * Index Action for php application. will check for request from url path,
 		 * perform functionality and return the JSon.
@@ -66,7 +66,7 @@
 
 	    		while ($count<6) {
 	    			$value = $inputData+1;
-	    			if($value%3 == 0) {
+	    			if($value%3 != 0) {
 	    				$returnArray[] = $value;
 	    				$count++;
 	    			}
