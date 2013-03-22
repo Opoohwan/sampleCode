@@ -63,9 +63,9 @@
 	    	if (is_int($inputData)) {
 	    		$count = 0;
 	    		$returnArray = array();
-
+	    		$value = $inputData
 	    		while ($count<6) {
-	    			$value = $inputData+1;
+	    			$value = $value+1;
 	    			if($value%3 != 0) {
 	    				$returnArray[] = $value;
 	    				$count++;
